@@ -1,0 +1,119 @@
+body {
+    background-color: #E2D7CA;
+    text-align: center;
+}
+
+h1 {
+    color: #D63939;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+p:first-of-type {
+    color: #1E2127;
+    font-weight: bold;
+    font-size: 1.5rem;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+p:nth-of-type(2) {
+    color: #D63939;
+}
+
+label {
+    margin-right: 1rem;
+    color: #1E2127;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input[type="radio"]:checked + span {
+    background-color: #D63939;
+    color: #F6EFEF;
+}
+
+input[type="checkbox"]:checked + span {
+    background-color: #D63939;
+    color: #F6EFEF;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #F6EFEF;
+    font-weight: bold;
+    animation: slideInRight 1s ease-in-out;
+}
+
+button:first-of-type {
+    background-color: #D63939;
+}
+
+button:last-of-type {
+    background-color: #1E2127;
+}
+
+p:last-of-type {
+    color: #1E2127;
+    margin: 0 50px;
+    font-size: 1.5rem
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #D63939;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-in-out, slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
